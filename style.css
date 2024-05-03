@@ -1,7 +1,8 @@
 body {
-  background-color: hsl(221, 51%, 16%);
+  background-color: hsl(0, 0%, 100%);
   font-family: Raleway, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .logoContainer {
@@ -77,4 +78,45 @@ main p {
   margin-top: 20px;
   text-align: center;
   font-family: Raleway, sans-serif;
+}
+
+.boxContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boxContainer .box {
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+  background: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.boxContainer .box img {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.boxContainer .box h3 {
+  color: hsl(0, 0%, 27%);
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.boxContainer .box p {
+  color: hsl(0, 0%, 47%);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.boxContainer .box:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
