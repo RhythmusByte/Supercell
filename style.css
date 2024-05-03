@@ -1,0 +1,80 @@
+body {
+  background-color: hsl(221, 51%, 16%);
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+
+.logoContainer {
+  background-color: hsl(37, 98%, 53%);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logoContainer img {
+  padding-left: 5px;
+  height: 50px;
+  width: 60px;
+  display: flex;
+}
+
+.logoContainer nav {
+  justify-content: flex-end;
+}
+
+.logoContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logoContainer a {
+  display: block;
+  color: hsl(0, 0%, 0%);
+  font-weight: bolder;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logoContainer a:hover {
+  color: hsl(0, 0%, 96%);
+}
+
+.logoContainer ul li {
+  display: inline-block;
+}
+
+/* End of Navbar */
+
+.home {
+  background: url("./images/homeBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.brandName {
+  color: hsl(37, 98%, 53%);
+  text-align: center;
+  font-family: Anta, sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+main p {
+  color: hsl(0, 0%, 0%);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+}
