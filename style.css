@@ -324,6 +324,13 @@ footer,
 .footerContainer .icons {
   font-size: 1.15em;
   margin: 10px;
+}
+
+#icon {
+  padding: 8px;
+}
+
+#icon:hover {
   cursor: pointer;
 }
 
@@ -353,6 +360,14 @@ footer,
   .imageContainer img {
     width: 100%;
     height: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #icon {
+    padding: 10px;
   }
 
   .credits {
