@@ -1,0 +1,50 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 100%;
+
+    background: url("./Images/Header-Backgroung.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 70vh;
+}
+.container h1{
+    font-size: 3rem;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    height: 25%;
+}
+
+.body{
+    margin:40px 
+}
+
+.textContainer {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+.textContainer h1{
+    padding-top: 85px;
+    padding-bottom: 0;
+    font-family: Anta;
+    font-size: 2.5em;
+    display: block;
+    text-align: center;
+}
+
+.textContainer p {
+    font-family: "comfortaa",sans-serif;
+    max-width: 65%;
+   text-align: center;
+   display: inline-block;
+}
