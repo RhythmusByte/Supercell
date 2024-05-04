@@ -1,88 +1,174 @@
-
-body{
-    padding: 0px;
-    margin: 0px;
-    background-color: #ffffff00;
-    font-family: Raleway, sans-serif;;
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ffffff00;
+  font-family: Raleway, sans-serif;
 }
-.logo-cointainer{
-    background-color: #fca312;
-    height: 50px;
+
+/* Starting of Navbar */
+
+.logoContainer {
+  background-color: hsl(37, 98%, 53%);
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logoContainer img {
+  padding-left: 5px;
+  height: 50px;
+  width: 60px;
+  display: flex;
+}
+
+.logoContainer nav {
+  justify-content: flex-end;
+}
+
+.logoContainer ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.logoContainer nav ul li a {
+  display: inline-block;
+  color: hsl(0, 0%, 20%);
+  padding: 5px 0;
+  font-family: "Anta", sans-serif;
+  font-weight: bold;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.logoContainer nav ul li a:hover,
+.logoContainer nav ul li a.active {
+  color: hsl(0, 0%, 3%);
+  border-bottom-color: hsl(180, 100%, 50%);
+  transform: scale(1.02);
+}
+
+.menuBar {
+  cursor: pointer;
+  display: none;
+}
+.menuBar div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #000;
+}
+
+/* End of Navbar */
+
+.logo-cointainer {
+  background-color: #fca312;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-cointainer img {
+  height: 7.5vh;
+  width: 8vh;
+}
+.logo-cointainer ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.logo-cointainer ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  padding: 8px 16px;
+}
+.logo-cointainer a:hover {
+  color: rgba(0, 0, 0, 0.532);
+  font-size: 1.03em;
+}
+
+.gamesContainer {
+  background: url("images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
+.gamesContainer h2 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+.tilesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.tiles {
+  width: 425px;
+  background-color: rgba(255, 255, 255, 0.284);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px;
+  margin: 25px;
+}
+.tiles img {
+  width: 100%;
+  height: auto;
+}
+.content {
+  padding: 20px;
+}
+.content h2 {
+  text-align: center;
+}
+.content p {
+  text-align: center;
+}
+.tiles:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 769px) {
+  .menuBar {
+    display: block;
+  }
+
+  .logoContainer nav {
+    position: absolute;
     width: 100%;
-    display: flex;
-    overflow: hidden;
+    left: -150%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 0 50px;
+    transition: 0.3s;
+  }
+  .logoContainer #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .logoContainer nav ul {
+    display: block;
+  }
+  .logoContainer nav ul li a {
     margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-
+  }
 }
-.logo-cointainer img{
-    height: 7.5vh;
-    width: 8vh;
-
-}
-.logo-cointainer ul li{
-    list-style-type: none;
-    display: inline-block;
-   
-}
-.logo-cointainer ul  a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    padding: 8px 16px;
-} 
-.logo-cointainer  a:hover{
-    color: rgba(0, 0, 0, 0.532);
-    font-size: 1.03em;
-}
-
-
-.Game-cointainer{
-    background: url("images/backgroundImage.jpg");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    height: 100vh;
-} 
-.Game-cointainer h2{
-    font-weight: bolder;
-    font-size: 35px;
-   
-}
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-.card{
-    width: 425px;
-    background-color: rgba(255, 255, 255, 0.284);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px;
-    margin: 25px;
-}
-.card img{
-    width : 100%;
-    height: auto;
-}
-.content{
-    padding:20px ;
-
-}
-.content h2{
-   text-align: center;
-}
-.content p{
-    text-align: center;
- }
- .card:hover{
-transform: scale(1.02);
-cursor: pointer;
- }
