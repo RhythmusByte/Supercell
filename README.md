@@ -5,7 +5,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/rhythmusbyte/supercell)](https://github.com/rhythmusbyte/supercell/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/rhythmusbyte/supercell)](https://github.com/rhythmusbyte/supercell/issues)
 
-Welcome to our simple and elegant website inspired by the renowned game developer, Supercell! Please note that this website is not an official clone of Supercell's website, but rather a fun project created by Andy, Candy, and Mandy. This project marks our first collaborative effort in web development, crafted with HTML, CSS, and JavaScript.
+Welcome to our simple and elegant website inspired by the renowned game developer, Supercell! Please note that this website is not an official clone of Supercell's website, but rather a fun project created by us. This project marks our first collaborative effort in web development, crafted with HTML, CSS, and JavaScript.
 
 ## Preview
 
