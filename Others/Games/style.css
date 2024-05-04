@@ -40,7 +40,7 @@ body{
 
 
 .Game-cointainer{
-    background: url("/images/Bg-image.jpg");
+    background: url("images/Bg-image.jpg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
