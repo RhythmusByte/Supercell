@@ -5,10 +5,13 @@ body {
   padding: 0;
 }
 
+/* Starting of Navbar */
+
 .logoContainer {
   background-color: hsl(37, 98%, 53%);
-  height: 50px;
+  height: 70px;
   width: 100%;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,28 +31,43 @@ body {
 
 .logoContainer ul {
   list-style-type: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.logoContainer a {
-  display: block;
-  color: hsl(0, 0%, 0%);
-  font-weight: bolder;
-  padding: 8px 16px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.logoContainer a:hover {
-  color: hsl(0, 0%, 96%);
-}
-
-.logoContainer ul li {
+.logoContainer nav ul li a {
   display: inline-block;
+  color: hsl(0, 0%, 20%);
+  padding: 5px 0;
+  font-weight: bold;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.logoContainer nav ul li a:hover,
+.logoContainer nav ul li a.active {
+  color: hsl(0, 0%, 3%);
+  border-bottom-color: hsl(180, 100%, 50%);
+  transform: scale(1.02);
+}
+
+.menuBar {
+  cursor: pointer;
+  display: none;
+}
+.menuBar div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #000;
 }
 
 /* End of Navbar */
+/* Starting of Hero Section */
 
 .home {
   background: url("./images/homeBG.jpg");
@@ -79,6 +97,9 @@ main p {
   text-align: center;
   font-family: Raleway, sans-serif;
 }
+
+/* End of Hero Section */
+/* Beginning of News Tiles */
 
 .boxContainer {
   padding: 20px;
@@ -119,4 +140,38 @@ main p {
 .boxContainer .box:hover {
   box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
   transform: scale(1.02);
+}
+
+/* End of News Tiles */
+/* Media Queries */
+
+@media only screen and (max-width: 769px) {
+  .menuBar {
+    display: block;
+  }
+
+  .logoContainer nav {
+    position: absolute;
+    width: 100%;
+    left: -150%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 0 50px;
+    transition: 0.3s;
+  }
+  .logoContainer #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .logoContainer nav ul {
+    display: block;
+  }
+  .logoContainer nav ul li a {
+    margin: 0;
+  }
+
+  .home {
+    background: url("images/mobilebg.jpg");
+    height: 100vh;
+  }
 }
