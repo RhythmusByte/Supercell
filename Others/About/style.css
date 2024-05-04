@@ -5,7 +5,7 @@ body{
 .container{
     width: 100%;
 
-    background: url("/Images/Header-Backgroung.jpg");
+    background: url("Images/Header-Backgroung.jpg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
