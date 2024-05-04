@@ -1,3 +1,4 @@
+
 body{
     padding: 0px;
     margin: 0px;
@@ -39,7 +40,7 @@ body{
 
 
 .Game-cointainer{
-    background: url("./images/Bg-image.jpg");
+    background: url("images/backgroundImage.jpg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -48,3 +49,40 @@ body{
     background-size: cover;
     height: 100vh;
 } 
+.Game-cointainer h2{
+    font-weight: bolder;
+    font-size: 35px;
+   
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 425px;
+    background-color: rgba(255, 255, 255, 0.284);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px;
+    margin: 25px;
+}
+.card img{
+    width : 100%;
+    height: auto;
+}
+.content{
+    padding:20px ;
+
+}
+.content h2{
+   text-align: center;
+}
+.content p{
+    text-align: center;
+ }
+ .card:hover{
+transform: scale(1.02);
+cursor: pointer;
+ }

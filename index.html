@@ -31,20 +31,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- Navbar -->
+    
     <header>
       <div class="logoContainer">
         <img src="images/logo.png" class="logoImage" alt="Logo Image" />
+        <input type="checkbox" id="nav_check" hidden />
         <nav>
           <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="games/project/Games.html">Our Games</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="./Others/Games/index.html">Games</a></li>
+            <li><a href="./Others/About/index.html">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
+        <label for="nav_check" class="menuBar">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
       </div>
     </header>
 
+    <!-- End of Navbar -->
+    <!-- Starting of Home -->
+    
     <main>
       <div class="home">
         <h2 class="brandName">SUPERCELL</h2>
@@ -55,6 +67,7 @@
       </div>
 
       <!-- End of Home -->
+      <!--  Starting of News -->
 
       <div class="boxContainer">
         <div class="box">
@@ -95,7 +108,9 @@
           <p>Comfortable Feeling Uncomfortable</p>
         </div>
       </div>
+      
       <!-- End of Box Container -->
+      
     </main>
   </body>
 </html>
