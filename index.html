@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Anta&family=Comfortaa:wght@300..700&family=Freeman&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
     <title>Supercell</title>
     <link
       rel="apple-touch-icon"
@@ -38,24 +42,54 @@
   <body>
     <!-- Starting of Navbar -->
 
-    <header>
-      <div class="logoContainer">
-        <img src="images/logo.png" class="logoImage" alt="Logo Image" />
-        <input type="checkbox" id="nav_check" hidden />
-        <nav>
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="./Others/Games/index.html">Games</a></li>
-            <li><a href="./Others/About/index.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="images/logo.png" alt="Logo Image" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Games</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Careers</span>
+              </a>
+            </li>
           </ul>
-        </nav>
-        <label for="nav_check" class="menuBar">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
-      </div>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
     </header>
 
     <!-- End of Navbar -->
@@ -147,10 +181,12 @@
 
       <div class="credits">
         <p>
-          Created with ❤️ by <br /><a href="#">Afna Sheri</a>,
+          Created by <br /><a href="#">Afna Sheri</a>,
           <a href="#"> Akhil Mahesh</a> and <a href="#">Sanooj K</a>
         </p>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
