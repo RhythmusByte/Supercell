@@ -59,7 +59,7 @@ a {
 .nav__close,
 .nav__toggle {
   display: flex;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -114,9 +114,10 @@ a {
 
 .nav__link {
   position: relative;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: "Anta", sans-serif;
   display: inline-flex;
   align-items: center;
   transition: opacity 0.4s;
@@ -142,7 +143,7 @@ a {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
   transition: width 0.4s ease-out;
 }
 
@@ -174,7 +175,7 @@ a {
 }
 
 .nav__social-link {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   font-size: 1.5rem;
   transition: transform 0.4s;
 }
@@ -344,29 +345,6 @@ footer,
 /* Media Queries */
 
 @media only screen and (max-width: 769px) {
-  .menuBar {
-    display: block;
-  }
-
-  .logoContainer nav {
-    position: absolute;
-    width: 100%;
-    left: -150%;
-    top: 70px;
-    background: hsl(0, 0%, 100%);
-    padding: 0 50px;
-    transition: 0.3s;
-  }
-  .logoContainer #nav_check:checked ~ nav {
-    left: 0;
-  }
-  .logoContainer nav ul {
-    display: block;
-  }
-  .logoContainer nav ul li a {
-    margin: 0;
-  }
-
   .home {
     background: url("images/mobilebg.jpg");
     height: 100vh;
