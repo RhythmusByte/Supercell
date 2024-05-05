@@ -380,6 +380,9 @@ transition: 0.5s;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
+}
+
+.credits:hover {
   cursor: pointer;
 }
 
