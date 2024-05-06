@@ -375,6 +375,11 @@ transition: 0.5s;
   color: hsl(0, 0%, 100%);
 }
 
+.footerCredits a {
+  text-decoration: none;
+  color: hsl(0, 0%, 68%);
+}
+
 .credits {
   opacity: 0.7;
   letter-spacing: 1px;
@@ -384,7 +389,10 @@ transition: 0.5s;
 
 .credits:hover {
   cursor: pointer;
+  color: hsl(0, 0%, 100%);
 }
+
+
 
 /* Ending of Footer */
 
