@@ -32,7 +32,7 @@ If you like our project, please consider giving it a star! ⭐️
 
 ## Contributors
 
-- [Afna Sheri](https://github.com/af-na)
+- [Afna Sheri A](https://github.com/af-na)
 - [Akhil Mahesh](https://github.com/RhythmusByte)
 - [Sanooj K](https://github.com/sanoojkavungal)
   
