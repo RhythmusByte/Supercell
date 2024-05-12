@@ -1,5 +1,7 @@
 # Supercell Website
 
+> This project is still in development
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/supercell-website/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/rhythmusbyte/supercell)](https://github.com/rhythmusbyte/supercell/stargazers)
 [![GitHub contributors](https://img.shields.io/github/contributors/rhythmusbyte/supercell)](https://github.com/rhythmusbyte/supercell/graphs/contributors)
